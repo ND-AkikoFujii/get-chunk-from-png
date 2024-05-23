@@ -1,0 +1,11 @@
+{
+  "name": "get-chunk-from-png",
+  "version": "0.1.0",
+  "description": "PNG画像から任意のチャンクを取得する。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ka_kko",
+  "license": "MIT"
+}
