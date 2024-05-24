@@ -1,5 +1,6 @@
 export const getChunkFromPng = (pngFile, chunkName) => {
   const fileReader = new FileReader()
+  const returnData = []
   let decodeData
   fileReader.addEventListener('load', () => {
     decodeData = fileReader.result
@@ -36,7 +37,9 @@ export const getChunkFromPng = (pngFile, chunkName) => {
       const targetChunkData = uint8.slice(cIndex - 4, (cIndex - 4) + cLength + 12)
       return targetChunkData
     }
-    getChunkData(chunkName)
+    returnData = getChunkData(chunkName)
   })
   fileReader.readAsArrayBuffer(pngFile)
+  console.log(returnData)
+  return returnData
 }

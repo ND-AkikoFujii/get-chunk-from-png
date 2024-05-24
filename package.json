@@ -1,6 +1,6 @@
 {
   "name": "get-chunk-from-png",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "PNG画像から任意のチャンクを取得する。",
   "main": "index.js",
   "scripts": {
